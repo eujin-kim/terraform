@@ -17,7 +17,8 @@ resource "aws_subnet" "private_1a" {
     Name = "user07-subnet-private-1a"
   }
 }
-esource "aws_subnet" "public_1c" {
+
+resource "aws_subnet" "public_1c" {
   vpc_id            = "${aws_vpc.dev.id}"
   availability_zone = "ap-northeast-1c"
   cidr_block        = "7.0.2.0/24"
